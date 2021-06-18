@@ -8,12 +8,13 @@ class App extends Component {
     this.state = { contador: 0 }
   }
   
-  OnKeyUpHandler(event){    
+  OnKeyUpHandler(event){   
+    let number_characteres =  event.target.value.length
     this.setState({
-      contador: event.target.value.length
+      contador: number_characteres
     })
   }
-  
+
   render() {
     return (
       <div className="container">
